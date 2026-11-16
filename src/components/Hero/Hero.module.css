@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    min-height: calc(100vh - 48px);
+}
+
+.title {
+    margin: 0;
+    font-size: 40px;
+    color: #010101;
+    text-align: center;
+}
+
+.accent {
+    color: #4f46e5;
+}
+
+.text {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 16px;
+    }
+}

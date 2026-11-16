@@ -1,0 +1,65 @@
+{
+    "folders": [
+        {
+            "path": ".",
+        },
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/dist": true,
+            "**/node_modules": true,
+        },
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit",
+        },
+        "js/ts.tsdk.path": "node_modules/typescript/lib",
+        "js/ts.tsdk.promptToUseWorkspaceVersion": true,
+    },
+    "extensions": {
+        "recommendations": [
+            "dbaeumer.vscode-eslint",
+            "esbenp.prettier-vscode",
+            "editorconfig.editorconfig",
+        ],
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "Start development server",
+                "type": "npm",
+                "script": "dev",
+                "isBackground": true,
+                "problemMatcher": [],
+            },
+            {
+                "label": "Lint",
+                "type": "npm",
+                "script": "lint",
+                "problemMatcher": ["$eslint-stylish"],
+            },
+            {
+                "label": "Type check",
+                "type": "npm",
+                "script": "typecheck",
+                "problemMatcher": ["$tsc"],
+            },
+            {
+                "label": "Build production bundle",
+                "type": "npm",
+                "script": "build",
+                "group": { "kind": "build", "isDefault": true },
+                "problemMatcher": ["$tsc"],
+            },
+            {
+                "label": "Preview production build",
+                "type": "npm",
+                "script": "preview",
+                "isBackground": true,
+                "problemMatcher": [],
+            },
+        ],
+    },
+}
