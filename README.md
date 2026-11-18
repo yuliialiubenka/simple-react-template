@@ -12,7 +12,7 @@ repository**. Then clone it and work with it as with any other repository.
 
 ## Preparing for coding
 
-1. Install Node.js **22.12 or newer** (LTS). [Download](https://nodejs.org/en/) if needed.
+1. Install Node.js **24** (LTS). [Download](https://nodejs.org/en/) if needed.
 2. Install dependencies: `npm install`.
 3. Start the dev server: `npm run dev`.
 4. Open [http://localhost:5173](http://localhost:5173). The page reloads automatically after you
